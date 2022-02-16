@@ -7,7 +7,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-mainClassName="SudokuSolver.Main"
+mainClassName="sudoku.ui.console.Main"
 
 javafx {
     version = "17"
