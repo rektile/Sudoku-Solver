@@ -43,6 +43,18 @@ public class Sudoku {
         return false;
     }
 
+    public int[] findNextEmpty(){
+        for(int i = 0;i<this.size;i++) {
+            for(int j = 0;j<this.size;j++) {
+                if(this.board[i][j] == 0){
+                    return new int[]{i, j};
+                }
+            }
+        }
+
+        return null;
+    }
+
     public void showBoard(){
         for(int i = 0;i<this.size;i++){
             String line = "";
