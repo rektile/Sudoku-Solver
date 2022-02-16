@@ -36,13 +36,13 @@ public class Sudoku {
 
         for(int i = startBoxX;i<startBoxX + 3;i++){
             for(int j = startBoxy;j<startBoxy + 3;j++){
-                if(this.board[i][j] != num && (row != i && col != j)){
+                if(this.board[i][j] == num && (row != i && col != j)){
                     return false;
                 }
             }
         }
 
-        return false;
+        return true;
     }
 
     public int[] findNextEmpty(){
