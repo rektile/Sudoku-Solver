@@ -17,13 +17,13 @@ public class Sudoku {
 
     private boolean checkValid(int col, int row, int num){
 
-        for(int i = 0;i<size;i++){
+        for(int i = 0;i<this.size;i++){
             if(this.board[row][i] == num && i != col){
                 return false;
             }
         }
 
-        for(int i = 0;i<size;i++) {
+        for(int i = 0;i<this.size;i++) {
             if(this.board[i][col] == num && i != row){
                 return false;
             }
@@ -33,7 +33,7 @@ public class Sudoku {
         int startBoxy = Math.floorDiv(col,3) * 3;
 
         for(int i = startBoxX;i<startBoxX + 3;i++){
-            for(int j = startBoxy;j<startBoxy;j++){
+            for(int j = startBoxy;j<startBoxy + 3;j++){
                 if(this.board[i][j] != num && (row != i && col != j)){
                     return false;
                 }
@@ -41,6 +41,26 @@ public class Sudoku {
         }
 
         return false;
+    }
+
+    public void showBoard(){
+        for(int i = 0;i<this.size;i++){
+            String line = "";
+            if(i % 3 == 0 && i != 0){
+                System.out.println("------------------------");
+            }
+
+            for(int j = 0;j<this.size;j++){
+
+                line += String.format(" %d ",this.board[i][j]);
+
+                if(j % 3 == 0 && j != 0){
+                    line += " | ";
+                }
+            }
+
+            System.out.println(line);
+        }
     }
 
 }
