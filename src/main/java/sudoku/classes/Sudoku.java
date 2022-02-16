@@ -47,16 +47,17 @@ public class Sudoku {
         for(int i = 0;i<this.size;i++){
             String line = "";
             if(i % 3 == 0 && i != 0){
-                System.out.println("------------------------");
+                System.out.println("----------------------------------");
             }
 
             for(int j = 0;j<this.size;j++){
 
-                line += String.format(" %d ",this.board[i][j]);
-
                 if(j % 3 == 0 && j != 0){
                     line += " | ";
                 }
+
+
+                line += String.format(" %d ",this.board[i][j]);
             }
 
             System.out.println(line);
