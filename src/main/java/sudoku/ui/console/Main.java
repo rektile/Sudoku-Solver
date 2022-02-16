@@ -9,5 +9,14 @@ public class Main {
 
         s.showBoard();
 
+        if(s.solve()){
+            System.out.println("Solved:");
+            s.showBoard();
+        }else{
+            System.out.println("Not solved");
+        }
+
+
+
     }
 }

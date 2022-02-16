@@ -1,5 +1,7 @@
 package sudoku.classes;
 
+import javax.sound.midi.Track;
+
 public class Sudoku {
     private final int size = 9;
     //private Integer[][] board = new Integer[9][9];
@@ -15,7 +17,7 @@ public class Sudoku {
             {9,0,4,5,0,0,0,0,1}
     };
 
-    private boolean checkValid(int col, int row, int num){
+    private boolean checkValid(int row, int col, int num){
 
         for(int i = 0;i<this.size;i++){
             if(this.board[row][i] == num && i != col){
@@ -53,6 +55,30 @@ public class Sudoku {
         }
 
         return null;
+    }
+
+    public boolean solve(){
+        int[] nextEmpty = this.findNextEmpty();
+        if(nextEmpty == null){
+            return true;
+        }
+
+        int row = nextEmpty[0];
+        int col = nextEmpty[1];
+
+        for(int i = 1;i<=10;i++){
+            if(this.checkValid(row,col,i)){
+                this.board[row][col] = i;
+
+                if(solve()){
+                    return true;
+                }
+
+                this.board[row][col] = 0;
+            }
+        }
+
+        return false;
     }
 
     public void showBoard(){
