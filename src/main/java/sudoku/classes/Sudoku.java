@@ -1,7 +1,5 @@
 package sudoku.classes;
 
-import javax.sound.midi.Track;
-
 public class Sudoku {
     private final int size = 9;
     //private Integer[][] board = new Integer[9][9];
