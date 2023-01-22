@@ -1,5 +1,6 @@
 package sudoku.controller;
 
+import javafx.scene.control.TextArea;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -19,7 +20,16 @@ public class SudokuViewController {
 
     @FXML
     void OnFieldTyped(KeyEvent event) {
-
+        String input = event.getCharacter();
+        System.out.println(event);
+        TextArea textArea = (TextArea) event.getTarget();
+        String curValue = textArea.getText();
+        System.out.println(curValue);
+        if (input.matches("[0-9]")) {
+            textArea.setText(input);
+        }else{
+            textArea.setText(curValue);
+        }
     }
 
     @FXML
