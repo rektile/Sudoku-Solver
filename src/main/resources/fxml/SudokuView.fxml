@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -441,6 +443,30 @@
             </TextArea>
          </children>
       </GridPane>
-      <ListView prefHeight="200.0" prefWidth="200.0" />
+      <HBox prefHeight="196.0" prefWidth="600.0" translateY="5.0">
+         <children>
+            <VBox prefHeight="196.0" prefWidth="300.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickSolve" prefHeight="62.0" prefWidth="148.0" text="Solve">
+                     <VBox.margin>
+                        <Insets left="75.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickClear" prefHeight="62.0" prefWidth="148.0" text="Clear">
+                     <VBox.margin>
+                        <Insets left="75.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <TextArea fx:id="logTextArea" editable="false" prefHeight="196.0" prefWidth="302.0" />
+         </children>
+      </HBox>
    </children>
 </VBox>

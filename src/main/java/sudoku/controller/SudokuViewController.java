@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import java.util.function.UnaryOperator;
 import java.util.regex.Pattern;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.TextArea;
@@ -27,6 +28,35 @@ public class SudokuViewController {
     @FXML
     private GridPane gridSudoku;
 
+    @FXML
+    private TextArea logTextArea;
+
+    @FXML
+    void onClickClear(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onClickSolve(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize() {
+        assert gridSudoku != null : "fx:id=\"gridSudoku\" was not injected: check your FXML file 'SudokuView.fxml'.";
+        assert logTextArea != null : "fx:id=\"logTextArea\" was not injected: check your FXML file 'SudokuView.fxml'.";
+
+        for (int i = 0; i < gridSudoku.getChildren().size(); i++) {
+            Node node = gridSudoku.getChildren().get(i);
+            if (node instanceof TextArea) {
+                TextArea textArea = (TextArea) node;
+                TextFormatter filter = getNumberOnlyFormatter();
+                textArea.setTextFormatter(filter);
+            }
+        }
+
+    }
+
     private TextFormatter getNumberOnlyFormatter(){
         UnaryOperator<TextFormatter.Change> filter = change -> {
             String newChar = change.getText();
@@ -45,19 +75,6 @@ public class SudokuViewController {
         return new TextFormatter<>(filter);
     }
 
-    @FXML
-    void initialize() {
-        assert gridSudoku != null : "fx:id=\"gridSudoku\" was not injected: check your FXML file 'SudokuView.fxml'.";
 
-        for (int i = 0; i < gridSudoku.getChildren().size(); i++) {
-            Node node = gridSudoku.getChildren().get(i);
-            if (node instanceof TextArea) {
-                TextArea textArea = (TextArea) node;
-                TextFormatter filter = getNumberOnlyFormatter();
-                textArea.setTextFormatter(filter);
-            }
-        }
-
-    }
 
 }
