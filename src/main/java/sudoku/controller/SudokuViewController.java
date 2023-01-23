@@ -33,7 +33,7 @@ public class SudokuViewController {
 
     @FXML
     void onClickClear(ActionEvent event) {
-
+        clearBoard();
     }
 
     @FXML
@@ -59,6 +59,12 @@ public class SudokuViewController {
 
     }
 
+    private void clearBoard(){
+        for(int i = 0; i < gridSudoku.getChildren().size() - 1; i++) {
+            TextArea area = (TextArea) gridSudoku.getChildren().get(i);
+            area.setText("");
+        }
+    }
 
     private void boardToGui(){
         int[][] board = sudokuManager.getBoard();
