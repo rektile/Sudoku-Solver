@@ -39,11 +39,11 @@ public class SudokuViewController {
     @FXML
     void onClickSolve(ActionEvent event) {
 
-        try{
-            guiToBoard();
-        }catch (NumberFormatException e){
-            this.logText("Area is not fully filled in!");
-            return;
+        guiToBoard();
+        if(sudokuManager.solve()){
+            boardToGui();
+        }else {
+            logText("Couldn't solve the sudoku.");
         }
 
 
@@ -55,25 +55,38 @@ public class SudokuViewController {
         assert gridSudoku != null : "fx:id=\"gridSudoku\" was not injected: check your FXML file 'SudokuView.fxml'.";
         assert logTextArea != null : "fx:id=\"logTextArea\" was not injected: check your FXML file 'SudokuView.fxml'.";
 
-        for (int i = 0; i < gridSudoku.getChildren().size(); i++) {
-            Node node = gridSudoku.getChildren().get(i);
-            if (node instanceof TextArea) {
-                TextArea textArea = (TextArea) node;
-                TextFormatter filter = getNumberOnlyFormatter();
-                textArea.setTextFormatter(filter);
-            }
-        }
+        initTextFormatters();
 
     }
 
-    private void guiToBoard() throws NumberFormatException{
+
+    private void boardToGui(){
+        int[][] board = sudokuManager.getBoard();
+
+        for(int row = 0; row < 9; row++) {
+            for(int col = 0; col < 9; col++) {
+                int number = board[row][col];
+                int index = row * 9 + col;
+                TextArea area = (TextArea) gridSudoku.getChildren().get(index);
+                area.setText(Integer.toString(number));
+            }
+        }
+    }
+
+    private void guiToBoard(){
         int[][] board = new int[9][9];
 
 
-        for(int i = 0; i < gridSudoku.getChildren().size(); i++){
+        for(int i = 0; i < gridSudoku.getChildren().size() - 1; i++){
             TextArea area = (TextArea) gridSudoku.getChildren().get(i);
-            int number = Integer.parseInt(area.getText());
-            System.out.println(number);
+            int number;
+
+            try{
+                number = Integer.parseInt(area.getText());
+            }catch (NumberFormatException e){
+                number = 0;
+            }
+
             int row = i / 9;
             int col = i % 9;
             board[row][col] = number;
@@ -84,6 +97,17 @@ public class SudokuViewController {
 
     private void logText(String text){
         logTextArea.setText(text);
+    }
+
+    private void initTextFormatters(){
+        for (int i = 0; i < gridSudoku.getChildren().size() - 1; i++) {
+            Node node = gridSudoku.getChildren().get(i);
+            if (node instanceof TextArea) {
+                TextArea textArea = (TextArea) node;
+                TextFormatter filter = getNumberOnlyFormatter();
+                textArea.setTextFormatter(filter);
+            }
+        }
     }
 
     private TextFormatter getNumberOnlyFormatter(){
@@ -103,7 +127,5 @@ public class SudokuViewController {
 
         return new TextFormatter<>(filter);
     }
-
-
 
 }
