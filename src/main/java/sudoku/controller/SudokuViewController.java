@@ -40,6 +40,7 @@ public class SudokuViewController {
         guiToBoard();
         if(sudokuManager.solve()){
             boardToGui();
+            logText("Board solved!");
         }else {
             logText("Couldn't solve the sudoku.");
         }
@@ -62,6 +63,7 @@ public class SudokuViewController {
             TextArea area = (TextArea) gridSudoku.getChildren().get(i);
             area.setText("");
         }
+        logText("Cleared board.");
     }
 
     private void boardToGui(){
