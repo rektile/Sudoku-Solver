@@ -4,14 +4,12 @@ package sudoku.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.function.UnaryOperator;
-import java.util.regex.Pattern;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import sudoku.classes.Sudoku;
 
