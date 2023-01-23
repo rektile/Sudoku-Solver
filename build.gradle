@@ -7,7 +7,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-mainClassName="sudoku.ui.console.Main"
+mainClassName="sudoku.ui.gui.Main"
 
 javafx {
     version = "17"

@@ -1,21 +1,17 @@
 package sudoku.classes;
 
-import javax.sound.midi.Track;
-
 public class Sudoku {
     private final int size = 9;
-    //private Integer[][] board = new Integer[9][9];
-    private Integer[][] board = {
-            {0,0,0,8,0,0,0,0,9},
-            {0,1,9,0,0,5,8,3,0},
-            {0,4,3,0,1,0,0,0,7},
-            {4,0,0,1,5,0,0,0,3},
-            {0,0,2,7,0,4,0,1,0},
-            {0,8,0,0,9,0,6,0,0},
-            {0,7,0,0,0,6,3,0,0},
-            {0,3,0,0,7,0,0,8,0},
-            {9,0,4,5,0,0,0,0,1}
-    };
+    private int[][] board = new int[9][9];
+
+
+    public int[][] getBoard(){
+        return this.board;
+    }
+
+    public void setBoard(int[][] newBoard){
+        this.board = newBoard;
+    }
 
     private boolean checkValid(int row, int col, int num){
 

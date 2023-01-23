@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -34,413 +36,441 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" prefHeight="67.0" prefWidth="66.0" promptText="___" scaleShape="false" styleClass="text-field" wrapText="true" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="66.0" promptText="___" scaleShape="false" styleClass="text-field" wrapText="true" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
-            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#OnFieldTyped" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+            <TextArea focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="66.66" prefWidth="66.66" promptText="___" scaleShape="false" styleClass="text-field" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
                <font>
                   <Font size="32.0" />
                </font>
             </TextArea>
          </children>
       </GridPane>
-      <ListView prefHeight="200.0" prefWidth="200.0" />
+      <HBox prefHeight="196.0" prefWidth="600.0" translateY="5.0">
+         <children>
+            <VBox prefHeight="196.0" prefWidth="300.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickSolve" prefHeight="62.0" prefWidth="148.0" text="Solve">
+                     <VBox.margin>
+                        <Insets left="75.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onClickClear" prefHeight="62.0" prefWidth="148.0" text="Clear">
+                     <VBox.margin>
+                        <Insets left="75.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <TextArea fx:id="logTextArea" editable="false" prefHeight="196.0" prefWidth="302.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </HBox>
    </children>
 </VBox>
