@@ -15,6 +15,10 @@ public class Sudoku {
             {9,0,4,5,0,0,0,0,1}
     };
 
+    public int[][] getBoard(){
+        return this.board;
+    }
+
     public void setBoard(int[][] newBoard){
         this.board = newBoard;
     }
