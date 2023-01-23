@@ -3,7 +3,7 @@ package sudoku.classes;
 public class Sudoku {
     private final int size = 9;
     //private Integer[][] board = new Integer[9][9];
-    private Integer[][] board = {
+    private int[][] board = {
             {0,0,0,8,0,0,0,0,9},
             {0,1,9,0,0,5,8,3,0},
             {0,4,3,0,1,0,0,0,7},
@@ -14,6 +14,10 @@ public class Sudoku {
             {0,3,0,0,7,0,0,8,0},
             {9,0,4,5,0,0,0,0,1}
     };
+
+    public void setBoard(int[][] newBoard){
+        this.board = newBoard;
+    }
 
     private boolean checkValid(int row, int col, int num){
 

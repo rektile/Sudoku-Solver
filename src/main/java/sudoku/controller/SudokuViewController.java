@@ -39,6 +39,15 @@ public class SudokuViewController {
     @FXML
     void onClickSolve(ActionEvent event) {
 
+        try{
+            guiToBoard();
+        }catch (NumberFormatException e){
+            this.logText("Area is not fully filled in!");
+            return;
+        }
+
+
+
     }
 
     @FXML
@@ -55,6 +64,26 @@ public class SudokuViewController {
             }
         }
 
+    }
+
+    private void guiToBoard() throws NumberFormatException{
+        int[][] board = new int[9][9];
+
+
+        for(int i = 0; i < gridSudoku.getChildren().size(); i++){
+            TextArea area = (TextArea) gridSudoku.getChildren().get(i);
+            int number = Integer.parseInt(area.getText());
+            System.out.println(number);
+            int row = i / 9;
+            int col = i % 9;
+            board[row][col] = number;
+        }
+
+        sudokuManager.setBoard(board);
+    }
+
+    private void logText(String text){
+        logTextArea.setText(text);
     }
 
     private TextFormatter getNumberOnlyFormatter(){
