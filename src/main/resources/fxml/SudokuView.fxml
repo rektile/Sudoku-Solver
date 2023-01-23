@@ -465,7 +465,11 @@
                   </Button>
                </children>
             </VBox>
-            <TextArea fx:id="logTextArea" editable="false" prefHeight="196.0" prefWidth="302.0" />
+            <TextArea fx:id="logTextArea" editable="false" prefHeight="196.0" prefWidth="302.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
          </children>
       </HBox>
    </children>
