@@ -2,7 +2,7 @@ build
 .idea
 .gradle
 gen
-
+out
 
 # Compiled class file
 *.class
